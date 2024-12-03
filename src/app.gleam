@@ -29,6 +29,10 @@ fn homepage() {
         "Williams and Holmes, a fractional portfolio management company",
       ),
       html.link([attribute.rel("stylesheet"), attribute.href("global.css")]),
+      html.meta([
+        attribute.name("viewport"),
+        attribute.content("width=device-width, initial-scale=1.0"),
+      ]),
     ]),
     html.body([], [
       html.main([], [
@@ -39,7 +43,7 @@ fn homepage() {
               attribute.alt("Williams and Holmes Logo"),
               attribute.src("logo-dark.svg"),
             ]),
-            html.div([], [
+            html.div([attribute.class("heading-container")], [
               html.h1([attribute.class("heading")], [
                 element.text("Williams & Holmes, LLC"),
               ]),
