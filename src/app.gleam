@@ -79,6 +79,7 @@ fn homepage() {
                 ]),
               ]),
               html.div([attribute.class("hero-image-container")], [
+                html.div([attribute.class("hero-gradient")], []),
                 html.img([
                   attribute.src("pricing-tracker.png"),
                   attribute.class("hero-image"),
