@@ -26,12 +26,18 @@ fn homepage() {
     html.head([], [
       html.title(
         [],
-        "Williams and Holmes, a fractional portfolio management company",
+        "Williams & Holmes, a fractional portfolio management company",
       ),
       html.link([attribute.rel("stylesheet"), attribute.href("global.css")]),
       html.meta([
         attribute.name("viewport"),
         attribute.content("width=device-width, initial-scale=1.0"),
+      ]),
+      html.meta([
+        attribute.name("description"),
+        attribute.content(
+          "Streamline your portfolio management with Williams & Holmes, LLC. We simplify pricing coordination and administrative tasks for food and beverage distributors, enabling your team to focus on growth. From supplier communication to SKU tracking, promotion calendars, and void reporting, our tailored solutions enhance efficiency and drive success. Let us handle the complexity so you can focus on what matters most—growing your business.",
+        ),
       ]),
     ]),
     html.body([], [
@@ -83,6 +89,9 @@ fn homepage() {
                 html.img([
                   attribute.src("pricing-tracker.png"),
                   attribute.class("hero-image"),
+                  attribute.alt(
+                    "A table containing information about beverage price tracking",
+                  ),
                 ]),
               ]),
             ]),
